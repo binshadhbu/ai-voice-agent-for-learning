@@ -1,12 +1,12 @@
 import React from 'react'
 
 const page = () => {
-  return (
+  return (  
     <div>
-        you can buy stuff here
-      
+      companion section
     </div>
   )
 }
 
 export default page
+    

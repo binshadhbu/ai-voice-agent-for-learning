@@ -1,9 +1,9 @@
 import React from 'react'
 
 const page = () => {
-  return (
+  return (  
     <div>
-      list all store items here
+      Subscription
     </div>
   )
 }
