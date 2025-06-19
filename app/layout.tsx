@@ -31,12 +31,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <ClerkProvider>
+    <ClerkProvider appearance={{ variables: { colorPrimary: '#fe5933' } }}>
       <html lang="en">
         <body
           className={AppFont.className}
         >
-          <Navbar/>
+          <Navbar />
           {children}
         </body>
       </html>

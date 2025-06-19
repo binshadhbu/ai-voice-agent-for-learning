@@ -3,9 +3,13 @@ import { clerkMiddleware, createRouteMatcher } from '@clerk/nextjs/server';
 // const isProtectedRoute = createRouteMatcher([ '/courses(.*)','/home(.*)'])
 const isPublicRoute = createRouteMatcher(['/', '/courses(.*)', '/store(.*)', '/blogs(.*)'])
 
-export default clerkMiddleware(async (auth, req) => {
-    if (!isPublicRoute(req)) await auth.protect()
-})
+// const isPublicRoute = createRouteMatcher(['/', '/companions'])
+
+// export default clerkMiddleware(async (auth, req) => {
+//     if (!isPublicRoute(req)) await auth.protect()
+// })
+
+export default clerkMiddleware();
 
 export const config = {
     matcher: [
